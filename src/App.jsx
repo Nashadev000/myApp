@@ -1,33 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Layaut from "./components/Layaut"
+import Navbar from "./components/Navbar"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="bg-secundary min-h-screen ">
+        <Navbar> </Navbar>
+        <Layaut>
+          <p>Hola soy el contenido</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt in animi voluptate repellat obcaecati eius rerum eos ratione fuga cumque! Dolorem magni cum optio ad odit et laborum veniam nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis excepturi minus repudiandae nesciunt officiis doloremque fuga illum quis possimus. Sed inventore deserunt officia id delectus cupiditate pariatur ex ab?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt in animi voluptate repellat obcaecati eius rerum eos ratione fuga cumque! Dolorem magni cum optio ad odit et laborum veniam nostrum.</p>
+          <p></p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt in animi voluptate repellat obcaecati eius rerum eos ratione fuga cumque! Dolorem magni cum optio ad odit et laborum veniam nostrum.</p>
+        </Layaut>
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
