@@ -1,3 +1,4 @@
+import Bloques from "./components/Bloques"
 import Layaut from "./components/Layaut"
 import Navbar from "./components/Navbar"
 
@@ -13,8 +14,9 @@ function App() {
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt in animi voluptate repellat obcaecati eius rerum eos ratione fuga cumque! Dolorem magni cum optio ad odit et laborum veniam nostrum.</p>
           <p></p>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt in animi voluptate repellat obcaecati eius rerum eos ratione fuga cumque! Dolorem magni cum optio ad odit et laborum veniam nostrum.</p>
-        </Layaut>
 
+        </Layaut>
+        <Bloques></Bloques>
       </div>
     </>
   )
